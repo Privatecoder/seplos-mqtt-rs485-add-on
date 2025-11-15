@@ -672,7 +672,7 @@ class AutoDiscoveryConfig:
             self.mqtt_client.publish(
                 discovery_topic,
                 json.dumps(config),
-                retain=False,
+                retain=True,
                 qos=1
             )
             logger.debug(f"Published discovery config for pack {pack_no}, {entity_type}: {name}")
