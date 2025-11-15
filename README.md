@@ -13,7 +13,7 @@ Sensor auto discovery can be enabled (optional)
 
 ## Wiring the RS485 device to one or multiple battery packs
 
-![wiring sample]()
+<img alt="wiring sample" src="https://github.com/user-attachments/assets/dc72fa68-df39-41e8-8033-4776d622d618" width="500">
 
 When using a regular patch-cable, cut one of its connectors and take the `orange`, `orange-white` and `green-white` wires to crimp a terminal onto each of them. Then connect it to the waveshare device like so:
 
@@ -21,7 +21,8 @@ When using a regular patch-cable, cut one of its connectors and take the `orange
 - `orange-white` => `RS485-B`
 - `green-white` => `PE`
 
-![waveshare gateway pinout]()
+<img alt="waveshare gateway pinout" src="https://github.com/user-attachments/assets/442e0fee-5ec7-495b-81d7-013c56f1f304" width="100">
+
 
 ## Installation and configuration
 
@@ -63,6 +64,6 @@ When using a regular patch-cable, cut one of its connectors and take the `orange
 
 - The provided `lovelace.yaml` is using custom add-ons like `mushroom-template-card`, `entity-progress-card`, `expander-card`, `button-card`, `bar-card`, `card_mod` and `browser_mod` (can be installed via HACS) and allows for a first start (value-based colors are based on EVE LF280K datasheets and measurements and personal preferences).
 
-![lovelace sample collapsed]()
+<img alt="lovelace sample collapsed" src="https://github.com/user-attachments/assets/6e4f0cc6-8f22-4745-8e78-af51b41a3394" width="400">
 
 ![lovelace sample expanded]()
