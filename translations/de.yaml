@@ -1,0 +1,73 @@
+configuration:
+  # RS485 Verbindung
+  rs485_remote_ip:
+    name: "Remote RS485 IP-Adresse"
+    description: "IP-Adresse des Remote RS485-Geräts (z.B. Waveshare RS485-to-ETH). Leer lassen für lokale serielle Verbindung."
+  
+  rs485_remote_port:
+    name: "Remote RS485 Port"
+    description: "TCP-Port des Remote RS485-Geräts (Standard: 4196)"
+  
+  serial_interface:
+    name: "Serielle Schnittstelle"
+    description: "Pfad zum seriellen Gerät (z.B. /dev/ttyUSB0 für lokal oder /tmp/vcom0 für remote via socat)"
+  
+  # Batterie-Konfiguration
+  number_of_packs:
+    name: "Anzahl Batteriepakete"
+    description: "Gesamtanzahl der zu überwachenden Batteriepakete (1 = Einzelpack, 2+ = Master + Slaves)"
+  
+  min_cell_voltage:
+    name: "Minimale Zellenspannung"
+    description: "Minimal erlaubte Zellenspannung in Volt (für Berechnungen)"
+  
+  max_cell_voltage:
+    name: "Maximale Zellenspannung"
+    description: "Maximal erlaubte Zellenspannung in Volt (für Berechnungen)"
+  
+  # MQTT Konfiguration
+  mqtt_topic:
+    name: "MQTT Topic"
+    description: "Basis MQTT Topic für Batteriedaten"
+  
+  mqtt_update_interval:
+    name: "MQTT Update-Intervall"
+    description: "Sekunden zwischen MQTT-Updates (0 = kontinuierliche Updates)"
+  
+  # Home Assistant Integration
+  enable_ha_discovery:
+    name: "HA Auto-Discovery aktivieren"
+    description: "Automatisch Sensor-Entitäten in Home Assistant erstellen"
+  
+  ha_discovery_prefix:
+    name: "HA Discovery Prefix"
+    description: "MQTT Discovery Prefix für Home Assistant (normalerweise 'homeassistant')"
+  
+  # System-Einstellungen
+  logging_level:
+    name: "Log-Level"
+    description: "Detailgrad der Logs (debug zeigt die meisten Details)"
+
+tabs:
+  connection:
+    title: "Verbindungseinstellungen"
+    description: "Konfigurieren Sie die Verbindung zu Ihrem Seplos BMS"
+  
+  battery:
+    title: "Batterie-Einstellungen"
+    description: "Konfigurieren Sie Ihre Batteriepack-Parameter"
+  
+  mqtt:
+    title: "MQTT-Einstellungen"
+    description: "MQTT-Kommunikation konfigurieren"
+  
+  homeassistant:
+    title: "Home Assistant"
+    description: "Home Assistant Integration konfigurieren"
+  
+  system:
+    title: "System"
+    description: "System- und Debug-Konfiguration"
+
+network:
+  4196/tcp: "Remote RS485 Geräteverbindung"

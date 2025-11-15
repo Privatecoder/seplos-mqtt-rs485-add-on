@@ -1,0 +1,73 @@
+configuration:
+  # RS485 Connection
+  rs485_remote_ip:
+    name: "Remote RS485 IP Address"
+    description: "IP address of the remote RS485 device (e.g., Waveshare RS485-to-ETH). Leave empty for local serial connection."
+  
+  rs485_remote_port:
+    name: "Remote RS485 Port"
+    description: "TCP port of the remote RS485 device (default: 4196)"
+  
+  serial_interface:
+    name: "Serial Interface"
+    description: "Serial device path (e.g., /dev/ttyUSB0 for local or /tmp/vcom0 for remote via socat)"
+  
+  # Battery Configuration
+  number_of_packs:
+    name: "Number of Battery Packs"
+    description: "Total number of battery packs to monitor (1 = single pack, 2+ = master + slaves)"
+  
+  min_cell_voltage:
+    name: "Minimum Cell Voltage"
+    description: "Minimum allowed cell voltage in volts (used for calculations)"
+  
+  max_cell_voltage:
+    name: "Maximum Cell Voltage"
+    description: "Maximum allowed cell voltage in volts (used for calculations)"
+  
+  # MQTT Configuration
+  mqtt_topic:
+    name: "MQTT Topic"
+    description: "Base MQTT topic for publishing battery data"
+  
+  mqtt_update_interval:
+    name: "MQTT Update Interval"
+    description: "Seconds between MQTT updates (0 = continuous updates)"
+  
+  # Home Assistant Integration
+  enable_ha_discovery:
+    name: "Enable HA Auto-Discovery"
+    description: "Automatically create sensor entities in Home Assistant"
+  
+  ha_discovery_prefix:
+    name: "HA Discovery Prefix"
+    description: "MQTT discovery prefix for Home Assistant (usually 'homeassistant')"
+  
+  # System Settings
+  logging_level:
+    name: "Logging Level"
+    description: "Set the verbosity of logs (debug shows most detail)"
+
+tabs:
+  connection:
+    title: "Connection Settings"
+    description: "Configure how to connect to your Seplos BMS"
+  
+  battery:
+    title: "Battery Settings"
+    description: "Configure your battery pack parameters"
+  
+  mqtt:
+    title: "MQTT Settings"
+    description: "Configure MQTT communication"
+  
+  homeassistant:
+    title: "Home Assistant"
+    description: "Configure Home Assistant integration"
+  
+  system:
+    title: "System"
+    description: "System and debugging configuration"
+
+network:
+  4196/tcp: "Remote RS485 device connection"
