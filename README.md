@@ -65,5 +65,5 @@ When using a regular patch-cable, cut one of its connectors and take the `orange
 - The provided `lovelace.yaml` is using custom add-ons like `mushroom-template-card`, `entity-progress-card`, `expander-card`, `button-card`, `bar-card`, `card_mod` and `browser_mod` (can be installed via HACS) and allows for a first start (value-based colors are based on EVE LF280K datasheets and measurements and personal preferences).
 
 <img alt="lovelace sample collapsed" src="https://github.com/user-attachments/assets/6e4f0cc6-8f22-4745-8e78-af51b41a3394" width="400">
+<img alt="lovelace sample expanded" src="https://github.com/user-attachments/assets/fc7912e4-dd2b-4003-abad-a29574231207" width="400">
 
-![lovelace sample expanded]()
