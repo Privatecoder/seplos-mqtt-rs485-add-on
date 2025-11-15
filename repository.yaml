@@ -1,0 +1,4 @@
+name: Seplos MQTT RS485 Add-on
+url: https://github.com/Privatecoder/seplos-mqtt-rs485-add-on
+maintainer: Privatecoder
+description: MQTT bridge for Seplos RS485 BMS communication.
