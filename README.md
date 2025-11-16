@@ -26,7 +26,7 @@ When using a regular patch-cable, cut one of its connectors and take the `orange
 ## Installation and configuration
 
 1. Configure and setup an MQTT broker in Home Assistant
-2. Configure your RS485 device. For the Waveshare 2-CH RS485 to ETH gateway this would most importantly be `IP Mode: Static` (must be a reachable IP within your network), `Port: 4196` (default), `Work Mode: TCP`
+2. Configure your RS485 device. For the Waveshare 2-CH RS485 to ETH gateway this would most importantly be `IP Mode: Static` (must be a reachable IP within your network), `Port: 4196` (default), `Work Mode: TCP Server`, `Transfer Protocol: None`, `Baud Rate: 9600`
 3. Install this Add-on
 4. Go to the configurations-tab and enter all the required details, such as the IP address and port when using a remote RS485 device, or the locally available serial-port, number of battery packs etc.
 5. Press save
