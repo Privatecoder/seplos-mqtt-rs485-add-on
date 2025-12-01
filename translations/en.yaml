@@ -42,6 +42,10 @@ configuration:
   ha_discovery_prefix:
     name: "HA Discovery Prefix"
     description: "MQTT discovery prefix for Home Assistant (usually 'homeassistant')"
+
+  invert_ha_dis_charge_measurements:
+    name: "Invert HA Dis-/Charge measurements"
+    description: "Inverts the values of the charging and discharging sensors in Home Assistant"
   
   # System Settings
   logging_level:

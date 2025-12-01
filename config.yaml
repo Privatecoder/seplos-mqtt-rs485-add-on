@@ -1,6 +1,6 @@
 name: "Seplos MQTT RS485 Add-on"
 description: "Read Seplos V2/V16 BMS data via RS485 and publish it to HA via MQTT"
-version: "1.0.0-beta2"
+version: "1.0.0-beta3"
 slug: "seplos_mqtt_rs485_add-on"
 init: false
 arch:
@@ -30,6 +30,7 @@ options:
   mqtt_update_interval: 1
   enable_ha_discovery: true
   ha_discovery_prefix: "homeassistant"
+  invert_ha_dis_charge_measurements: false
   logging_level: "info"
 schema:
   rs485_remote_ip: "str?"
@@ -42,4 +43,5 @@ schema:
   mqtt_update_interval: "int"
   enable_ha_discovery: "bool"
   ha_discovery_prefix: "str"
+  invert_ha_dis_charge_measurements: "bool"
   logging_level: "list(info|error|debug)"

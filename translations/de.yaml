@@ -42,6 +42,10 @@ configuration:
   ha_discovery_prefix:
     name: "HA Discovery Prefix"
     description: "MQTT Discovery Prefix für Home Assistant (normalerweise 'homeassistant')"
+
+  invert_ha_dis_charge_measurements:
+    name: "Invertiere HA Lade-/Entlade-Messwerte"
+    description: "Invertiert die Messwerte der Lade- und Entlade-Sensoren in Home Assistant"
   
   # System-Einstellungen
   logging_level:
